@@ -5,7 +5,8 @@ from os import getenv
 from pandora_cloud.server import ChatBot
 
 _port = getenv('PORT')
-_proxy = getenv('PANDORA_PROXY')
+# _proxy = getenv('PANDORA_PROXY')
+_proxy = 'https://openai.loenzo.gq'
 _debug = getenv('PANDORA_DEBUG', 'false').lower() == 'true'
 _sentry = getenv('PANDORA_SENTRY', 'false').lower() == 'true'
 _listen = getenv('PANDORA_SERVER_LISTEN', 'true').lower() == 'true'
